@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fdeff2; /* 薄いピンク */
+  --foreground: #000000; /* 黒 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fdeff2; /* ダークモードでも同じ背景色 */
+    --foreground: #000000; /* 黒 */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: serif, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, sans-serif;
+}
+
+/* 縦書きテキスト用のユーティリティクラス */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* 和風のトランジション */
+.washi-transition {
+  transition: all 0.5s ease;
+}
