@@ -1,31 +1,31 @@
 'use client';
 
-import { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+// import { useState } from 'react';
+// import { AnimatePresence } from 'framer-motion';
 import Layout from '../components/Layout';
-import TabMenu, { Season } from '../components/TabMenu';
-import SeasonContent from '../components/SeasonContent';
+// import TabMenu, { Season } from '../components/TabMenu';
+// import SeasonContent from '../components/SeasonContent';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
-const EmailGenerator = dynamic(() => import('../components/EmailGenerator'), {
-  ssr: false,
-  loading: () => <p className="text-black/80">Loading email...</p>
-});
+// const EmailGenerator = dynamic(() => import('../components/EmailGenerator'), {
+//   ssr: false,
+//   loading: () => <p className="text-black/80">Loading email...</p>
+// });
 
 export default function Home() {
-  const [currentSeason, setCurrentSeason] = useState<Season>('spring');
+  // const [currentSeason, setCurrentSeason] = useState<Season>('spring');
 
-  const handleSeasonChange = (season: Season) => {
-    setCurrentSeason(season);
-  };
+  // const handleSeasonChange = (season: Season) => {
+  //   setCurrentSeason(season);
+  // };
 
   return (
     <Layout>
       <div className="max-w-5xl mx-auto">
         <div className="mb-12 flex justify-start">
           <Image
-            src="/images/test.jpg"
+            src="/images/kao.jpg"
             alt="Nagisa Hara's Profile Picture"
             width={150}
             height={150}
@@ -69,7 +69,7 @@ export default function Home() {
 
         <div className="mb-12 text-left">
           <h2 className="text-3xl font-mincho text-black mb-4">Contact</h2>
-          <EmailGenerator />
+          <p className="text-black/80">nhara [at] uottawa.ca</p>
         </div>
 
         {/* <TabMenu 
