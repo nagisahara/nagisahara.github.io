@@ -45,12 +45,17 @@ export default function Home() {
         <div className="mb-12 text-left">
           <h2 className="text-3xl font-mincho text-black mb-4">Papers</h2>
           <ul className="text-black/80 list-disc list-inside text-left mx-auto max-w-2xl">
+            {/* ここにさらに論文を追加できます */}
+            <li>
+              <span className="italic text-mizuiro">Nonequilibrium steady state in Lindblad dynamics for infinite quantum spin systems</span><br />
+              Shimomura, K., Hara, N., Kusuoka, S.<br />
+              preprint: <a href="https://arxiv.org/abs/2508.07448" target="_blank" rel="noopener noreferrer">arXiv:2508.07448</a>, (2025).
+            </li>
             <li>
               <span className="italic text-mizuiro">A classical proof of quantum knowledge for multi-prover interactive proof systems</span> <br />
               with Anne Broadbent, Alex B. Grilo, and Arthur Mehta.<br />
               preprint: <a href="https://arxiv.org/abs/2503.13699" target="_blank" rel="noopener noreferrer">arXiv:2503.13699</a>, (2025).
             </li>
-            {/* ここにさらに論文を追加できます */}
             <li>
               <span className="italic text-mizuiro">Tripartite Bell inequality for homogeneous polynomials in operator space theory</span><br />
               Nagisa Hara <br />
